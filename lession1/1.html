@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="cmn-hans">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+    <meta name=applicable-device content="pc,mobile">
+    <!-- some meta tags, important for SEO"-->
+    <meta name="description" content="put a short description in here" />
+    <meta name="keywords" content="put your important keywords in here" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <title>1.控制DIV属性-第一课</title>
+    <style type="text/css">
+    .control {
+        width: 400px;
+        height: 50px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .box {
+        background: #000;
+        height: 100px;
+        width: 100px;
+        margin: 0 auto;
+    }
+    </style>
+<script type="text/javascript">
+ window.addEventListener('load',function(){
+ var btn=document.getElementsByTagName('button');
+ var box=document.getElementById('box');    
+ var oldcss=getComputedStyle(box);
+function change(proper,value){
+    box.style[proper]=value;
+}
+btn[0].addEventListener('click',function(){ change('width','200px');});
+btn[1].addEventListener('click',function(){ change('height','200px'); });
+btn[2].addEventListener('click',function(){ change('background','red'); });
+btn[3].addEventListener('click',function(){ change('display','none'); });
+//btn[4].addEventListener('click',function(){ change('oldcss ',' '); });
+btn[4].addEventListener('click',function(){ 
+
+    alert('不知道怎么恢复默认');
+});
+
+});
+</script>   
+</head>
+<body>
+    <div class="container">
+        <div class="control">
+            <button type="button" class="btn btn-info">变宽</button>
+            <button type="button" class="btn btn-info">变高</button>
+            <button type="button" class="btn btn-info">变色</button>
+            <button type="button" class="btn btn-info">隐藏</button>
+            <button type="button" class="btn btn-info">重置</button>
+        </div>
+        <div class="control">
+            <div class="box" id='box'></div>
+        </div>
+    </div>
+</body>
+</html>
