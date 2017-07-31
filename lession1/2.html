@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cmn-hans">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name=renderer content=webkit>
+    <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+    <meta name=applicable-device content="pc,mobile">
+    <!-- some meta tags, important for SEO"-->
+    <meta name="description" content="put a short description in here" />
+    <meta name="keywords" content="put your important keywords in here" />
+    <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="green.css">
+    <title>网页换肤</title>
+<script type="text/javascript">
+    window.onload=function(){
+        var css=document.getElementsByTagName('link')[1];
+        var btn=document.getElementsByTagName('span');
+                btn[0].onclick=function(){
+                                css.href='red.css';
+                };
+                            btn[1].onclick=function(){
+                                css.href='green.css';
+                };
+                            btn[2].onclick=function(){
+                                css.href='black.css';
+                };
+}
+
+</script>
+</head>
+<body>
+    <div class="container" style="text-align: center;margin:0 auto; ">
+            <div class="skin">
+                <span class="red"></span>
+                <span class="green"></span>
+                <span class="black"></span>
+            </div>
+        <nav>
+            <ul>
+                <li><a href="" title="">新闻</a></li>
+                <li><a href="" title="">娱乐</a></li>
+                <li><a href="" title="">体育</a></li>
+                <li><a href="" title="">电影</a></li>
+                <li><a href="" title="">音乐</a></li>
+                <li><a href="" title="">旅游</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
