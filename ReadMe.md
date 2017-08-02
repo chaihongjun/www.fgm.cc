@@ -32,5 +32,22 @@ https://chaihongjun.github.io/www.fgm.cc/lession2/6.html
 https://chaihongjun.github.io/www.fgm.cc/lession2/7.html
 ### 9. 单一按钮显示/隐藏一播放列表收缩展开
 https://chaihongjun.github.io/www.fgm.cc/lession2/9.html
-### 9. 提示框效果
+### 10. 提示框效果
 https://chaihongjun.github.io/www.fgm.cc/lession2/10.html
+### 11. 鼠标移过，修改图片路径(没做)
+https://chaihongjun.github.io/www.fgm.cc/lession2/11.html
+### 12. 复选框（checkbox）全选/全不选/返选
+https://chaihongjun.github.io/www.fgm.cc/lession2/12.html
+
+# 第三课
+### 1. 用typeof查看数据类型
+https://chaihongjun.github.io/www.fgm.cc/lession3/1.html
+### 2. 用parseInt解析数字，并求和
+https://chaihongjun.github.io/www.fgm.cc/lession3/2.html
+### 3. 累加按钮，自加1
+https://chaihongjun.github.io/www.fgm.cc/lession3/3.html
+### 4. 输入两个数字，比较大小
+https://chaihongjun.github.io/www.fgm.cc/lession3/4.html
+### 5. 页面加载后累加，自加1 (没做)
+https://chaihongjun.github.io/www.fgm.cc/lession3/5.html
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cmn-hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name=renderer content=webkit>
+    <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+    <meta name=applicable-device content="pc,mobile">
+    <!-- some meta tags, important for SEO"-->
+    <meta name="description" content="put a short description in here" />
+    <meta name="keywords" content="put your important keywords in here" />
+    <title>用parseInt解析数字，并求和</title>
+    <script type="text/javascript">
+    window.onload = function() {
+        var input = document.getElementsByTagName('input');
+        var result = document.getElementById('result');
+        var btn = document.getElementsByTagName('button')[0];
+        btn.onclick = function() {
+            var sum = parseInt(input[0].value) + parseInt(input[1].value);
+            result.innerHTML = sum;
+        };
+    };
+
+    </script>
+</head>
+
+<body>
+    <input type="text" vaule=""><span>+</span>
+    <input type="text" vaule=""><span>=</span> <span id="result">?</span>
+    <button type="button">求和</button>
+</body>
+
+</html>

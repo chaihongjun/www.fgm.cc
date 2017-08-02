@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="cmn-hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name=renderer content=webkit>
+    <meta name=viewport content="width=device-width,initial-scale=1,user-scalable=0,minimum-scale=1,maximum-scale=1">
+    <meta name=applicable-device content="pc,mobile">
+    <!-- some meta tags, important for SEO"-->
+    <meta name="description" content="put a short description in here" />
+    <meta name="keywords" content="put your important keywords in here" />
+    <title> 复选框（checkbox）全选/全不选/返选</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css">
+    <style type="text/css">
+    .container {
+        margin: 20px auto;
+        width: 500px;
+    }
+
+    .sel {
+        border: 1px solid #cecede;
+        width: 130px;
+        height: 350px;
+        border-radius: 8px;
+        padding: 5px;
+        margin: 0 auto;
+    }
+
+    .control {
+        border-bottom: 1px solid #cecede;
+        height: 30px;
+        line-height: 30px;
+        padding-left: 10px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    </style>
+    <script type="text/javascript">
+    window.onload = function() {
+        var all = document.getElementById('all');
+        var span = document.getElementsByTagName('span');
+        var reverse = document.getElementById('reverse');
+        var list = document.getElementsByTagName('ul')[0].getElementsByTagName('input');
+        //全选
+        all.onclick = function() {
+            if (span[0].innerHTML == '全选') {
+                span[0].innerHTML = '全不选';
+                for (var i = 0; i < list.length; i++) {
+                    list[i].checked = true;
+                }
+            } else if (span[0].innerHTML == '全不选') {
+                span[0].innerHTML = '全选';
+                for (var i = 0; i < list.length; i++) {
+                    list[i].checked = false;
+                }
+            }
+        };
+        //反选
+        reverse.onclick = function() {
+            for (var i = 0; i < list.length; i++) {
+                if (list[i].checked == true) {
+                    list[i].checked = false;
+                } else if (list[i].checked == false) { list[i].checked = true }
+            }
+            if (span[0].innerHTML == '全选') {
+                span[0].innerHTML = '全不选';
+                all.checked = true;
+            } else if (span[0].innerHTML == '全不选') {
+                span[0].innerHTML = '全选';
+                all.checked = false;
+            }
+        };
+    };
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sel">
+            <div class="control">
+                <input type="checkbox" id='all'><span>全选</span>
+                <span><a href="javascript:;" title="" id='reverse'>反选</a></span>
+            </div>
+            <ul>
+                <li>
+                    <input type="checkbox" name="" value="">1</li>
+                <li>
+                    <input type="checkbox" name="" value="">2</li>
+                <li>
+                    <input type="checkbox" name="" value="">3</li>
+                <li>
+                    <input type="checkbox" name="" value="">4</li>
+                <li>
+                    <input type="checkbox" name="" value="">5</li>
+                <li>
+                    <input type="checkbox" name="" value="">6</li>
+                <li>
+                    <input type="checkbox" name="" value="">7</li>
+                <li>
+                    <input type="checkbox" name="" value="">8</li>
+                <li>
+                    <input type="checkbox" name="" value="">9</li>
+                <li>
+                    <input type="checkbox" name="" value="">10</li>
+            </ul>
+        </div>
+        <p>1、切换全选/全不选文字；2、根据选中个数更新全选框状态；</p>
+    </div>
+</body>
+
+</html>
