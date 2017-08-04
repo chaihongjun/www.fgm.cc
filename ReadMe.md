@@ -48,6 +48,8 @@ https://chaihongjun.github.io/www.fgm.cc/lession3/2.html
 https://chaihongjun.github.io/www.fgm.cc/lession3/3.html
 ### 4. 输入两个数字，比较大小
 https://chaihongjun.github.io/www.fgm.cc/lession3/4.html
-### 5. 页面加载后累加，自加1 (没做)
+### 5. 页面加载后累加，自加1
 https://chaihongjun.github.io/www.fgm.cc/lession3/5.html
+### 6. 判断数字是否为两位数 (未完成)
+https://chaihongjun.github.io/www.fgm.cc/lession3/6.html
 
