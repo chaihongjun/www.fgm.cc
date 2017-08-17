@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="cmn-hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name=renderer content=webkit>
+    <meta name=applicable-device content="pc,mobile">
+    <!-- some meta tags, important for SEO"-->
+    <meta name="description" content="put a short description in here" />
+    <meta name="keywords" content="put your important keywords in here" />
+    <title> 当前输入框高亮显示</title>
+    <style type="text/css">
+    .container {
+        border: 2px solid #f60;
+        width: 400px;
+        height: 200px;
+        margin: 0 auto;
+        background-color: #fef4eb;
+    }
+
+    .tips {
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        color: #f60;
+        font-weight: bold;
+        border-bottom: 2px solid #f60;
+        padding-left: 10px;
+    }
+
+    label {
+        float: left;
+        width: 150px;
+        text-align: right;
+    }
+
+    input {
+        cursor: pointer;
+        /*  border: 0; */
+        color: #fff;
+        font-size: 18px;
+        width: 200px;
+        height: 24px;
+        line-height: 24px;
+        background: #fffdec;
+        border-radius: 4px;
+        box-shadow: 0px -1px #ccc;
+    }
+
+    button {
+        margin: 5px auto;
+        display: block;
+        width: 100px;
+        height: 30px;
+        line-height: 20px;
+        background: #f60;
+        border: 0;
+        border-radius: 4px;
+        color: #fff;
+    }
+    </style>
+    <script type="text/javascript">
+    window.onload = function() {
+        var inputs = document.getElementsByTagName('input');
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].onfocus = function() {
+                //获得焦点
+                this.style.background = '#ffe7e7';
+            }
+            inputs[i].onblur = function() {
+                //失去焦点
+                this.style.background = '';
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tips">
+            用户登录
+        </div>
+        <div class="login">
+            <p>
+                <label>用户名：</label>
+                <input type="text" name="" value="">
+            </p>
+            <p>
+                <label>密码：</label>
+                <input type="text" name="" value="">
+            </p>
+            <button type="button">登 录</button>
+        </div>
+    </div>
+</body>
+
+</html>

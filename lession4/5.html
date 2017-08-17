@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="cmn-hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <meta name=renderer content=webkit>
+    <meta name=applicable-device content="pc,mobile">
+    <!-- some meta tags, important for SEO"-->
+    <meta name="description" content="put a short description in here" />
+    <meta name="keywords" content="put your important keywords in here" />
+    <title>css函数——设置/读取对象的属性</title>
+    <style type="text/css">
+    .container {
+        border: 1px solid #f60;
+        width: 500px;
+        height: 300px;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: #fef4eb;
+    }
+
+    input {
+        cursor: pointer;
+        border: 0;
+        background: #f60;
+        color: #fff;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    </style>
+    <script type="text/javascript">
+    window.onload = function() {
+        var oDiv = document.getElementsByTagName('div')[0];
+        var inputs = document.getElementsByTagName('input');
+
+        function style(obj, proper, value) { //获取或者设置CSS
+            if (arguments.length == 2) { //获取CSS属性
+                //兼容性写法:
+                if (obj.currentStyle) { //兼容低版本IE
+                    //获取内联样式
+                    return obj.currentStyle[proper];
+                } else {
+                    //其他浏览器写法
+                    return window.getComputedStyle(obj, null)[proper];
+                }
+            } else if (arguments.length == 3) { //设置CSS属性
+                return obj.style[proper] = value;
+            }
+        }
+        inputs[0].onclick = function() { //get style
+            var width = style(oDiv, 'width'); //获取width
+            var height = style(oDiv, 'height'); //获取height
+            var bg = style(oDiv, 'backgroundColor'); //获取background
+            alert("宽度:" + width + ",高度:" + height + "，背景色:" + bg);
+        }
+        inputs[1].onclick = function() { //set style
+            var values = ['300', '400', '#646464']; //宽度，高度，背景色
+            var width = style(oDiv, 'width', values[0]); //获取width
+            var height = style(oDiv, 'height', values[1]); //获取height
+            var bg = style(oDiv, 'backgroundColor', values[2]); //获取background
+            alert("宽度:" + width + ",高度:" + height + "，背景色:" + bg);
+        }
+                inputs[2].onclick = function() { //set style
+            var values = ['500', '300', '#fef4eb']; //宽度，高度，背景色
+            var width = style(oDiv, 'width', values[0]); //获取width
+            var height = style(oDiv, 'height', values[1]); //获取height
+            var bg = style(oDiv, 'backgroundColor', values[2]); //获取background
+            alert("宽度:" + width + ",高度:" + height + "，背景色:" + bg);
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <input type="button" name="" value="Get Style">
+        <input type="button" name="" value="Set Style">
+        <input type="button" name="" value="Default Style">
+    </div>
+</body>
+
+</html>

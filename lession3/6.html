@@ -12,29 +12,44 @@
     <meta name="keywords" content="put your important keywords in here" />
     <title>判断数字是否为两位数</title>
     <style type="text/css">
-button{
-    width: 150px;
-    height: 30px;
-}
+    button {
+        width: 150px;
+        height: 30px;
+    }
     </style>
     <script type="text/javascript">
     window.onload = function() {
-        
-        var btn=document.getElementsByTagName('button')[0];
-          var input=document.getElementsByTagName('input')[0];
-var result =  parseInt(input.value) ; 
-       (result >=10&& result<=99) ? alert('shi') : 
+        var btn = document.getElementsByTagName('button')[0];
+        var input = document.getElementsByTagName('input')[0];
+        var pattern =/[^\d+.]/;
+        input.onkeyup = function() {
+            if (pattern.test(input.value)){
+                alert("请输入纯数字");
+            }
+        }
+
+            btn.onclick=function(){
+
+                var length=input.value.length; 
+
+                alert("这个是"+length+"位数");       
+
+
+
+
+            }
+
 
 
 
 
     };
-
     </script>
 </head>
 
 <body>
-    <input type="text" name="" value="">  <button type="button">判断是不是两位数</button>
+    <input type="text" name="" value="">
+    <button type="button">判断是不是两位数</button>
 </body>
 
 </html>

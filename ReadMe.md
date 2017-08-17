@@ -52,4 +52,21 @@ https://chaihongjun.github.io/www.fgm.cc/lession3/4.html
 https://chaihongjun.github.io/www.fgm.cc/lession3/5.html
 ### 6. 判断数字是否为两位数 (未完成)
 https://chaihongjun.github.io/www.fgm.cc/lession3/6.html
+### 8. 简易网页时钟
+https://chaihongjun.github.io/www.fgm.cc/lession3/8.html
+### 9. 倒计时时钟（100秒）
+https://chaihongjun.github.io/www.fgm.cc/lession3/9.html
+
+# 第四课
+### 5. css函数一设置/读取对象的属性
+https://chaihongjun.github.io/www.fgm.cc/lession4/5.html
+### 6. 当前输入框高亮显示
+https://chaihongjun.github.io/www.fgm.cc/lession4/6.html
+### 7. 数组练习：各种数组方法的使用
+https://chaihongjun.github.io/www.fgm.cc/lession4/7.html
+
+# 实例项目
+### 3. 淘宝网-迷你登录
+https://chaihongjun.github.io/www.fgm.cc/project/taobao_login/index.html
+
 
