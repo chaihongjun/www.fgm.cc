@@ -35,12 +35,12 @@
     <script type="text/javascript">
     window.onload = function() {
         var timer = null;
-        clearInterval(timer);
-        time(); //页面加载完立即执行一次计时
-        timer = setInterval(time, 1000);   //1000毫秒之后再来执行计时
+       // clearInterval(timer);
+        time(); //页面加载完立即执行一次计时，获取当前时间
+        timer = setInterval(time, 1000);   //1000毫秒之后再来执行计时，时间动态变化
 
         function time() {
-            var shijian = new Date();
+            var shijian = new Date();   //当前时间戳
             var t = document.getElementsByTagName('span');
             t[0].innerHTML = shijian.getHours();
             t[1].innerHTML = shijian.getMinutes();

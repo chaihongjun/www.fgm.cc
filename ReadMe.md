@@ -12,7 +12,7 @@ https://chaihongjun.github.io/www.fgm.cc/lession1/3.html
 https://chaihongjun.github.io/www.fgm.cc/lession1/4.html
 ### 5. 鼠标移入/移出改变样式
 https://chaihongjun.github.io/www.fgm.cc/lession1/5.html
-### 5. 记住密码提示框
+### 6. 记住密码提示框
 https://chaihongjun.github.io/www.fgm.cc/lession1/6.html
 
 # 第二课
@@ -50,8 +50,10 @@ https://chaihongjun.github.io/www.fgm.cc/lession3/3.html
 https://chaihongjun.github.io/www.fgm.cc/lession3/4.html
 ### 5. 页面加载后累加，自加1
 https://chaihongjun.github.io/www.fgm.cc/lession3/5.html
-### 6. 判断数字是否为两位数 (未完成)
+### 6. 判断数字是否为两位数 
 https://chaihongjun.github.io/www.fgm.cc/lession3/6.html
+### 7. 网页计算器 （未完成）
+https://chaihongjun.github.io/www.fgm.cc/lession3/7.html
 ### 8. 简易网页时钟
 https://chaihongjun.github.io/www.fgm.cc/lession3/8.html
 ### 9. 倒计时时钟（100秒）
